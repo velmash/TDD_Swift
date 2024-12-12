@@ -14,6 +14,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    func numberOfVowels(in string: String) -> Int {
+        let vowels: [Character] = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+        var numberOfVowels = 0
+        
+        for char in string {
+            if vowels.contains(char) {
+                numberOfVowels += 1
+            }
+        }
+        
+        return numberOfVowels
+    }
 }
 
